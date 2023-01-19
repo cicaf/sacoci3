@@ -22,10 +22,10 @@ jobs:
     - run: echo WE moving up
 
 workflows:
-#LETS NAME THE WORKFLOW DEVENG
- deveng:
+#LETS NAME THE WORKFLOW welcome
+ welcome:
   jobs:
-    -  deveng/run
+    -  welcome/run
     -  print_me
     -  print_us:
         requires:
